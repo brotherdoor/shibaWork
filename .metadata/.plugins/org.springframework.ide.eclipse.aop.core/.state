@@ -2,5 +2,7 @@
 <aop-reference-model>
 <aop-project name="SpringExam"/>
 <aop-project name="HelloSpring"/>
+<aop-project name="SpringFavoriteMenu_templete"/>
+<aop-project name="SpringExam04"/>
 <aop-project name="SpringExam03"/>
 </aop-reference-model>

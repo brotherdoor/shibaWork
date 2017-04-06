@@ -1,0 +1,22 @@
+package menu.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import menu.domain.Menu;
+import menu.service.MenuService;
+
+@Controller
+public class MenuController {
+	
+	@Autowired
+	private MenuService service;
+	
+	@RequestMapping("/create.do")
+	public String createMenu(Menu menu){
+		service.create(menu);
+		return "redirect:/list.do";
+	}
+
+}
